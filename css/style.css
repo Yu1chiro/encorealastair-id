@@ -298,6 +298,40 @@
     }
 }
 
+/* events */
+/* Set margin-right to 0 for all screens */
+/* Set margin-right to 0 for all screens */
+.row.photos,
+.col-sm-6 {
+  margin-right: 0 !important;
+}
+
+/* Center the content in the row */
+.row.photos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+}
+
+/* Ensure the images take full width within the column */
+.col-sm-6 img {
+  width: 100%;
+  height: auto;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 575.98px) {
+  .row.photos,
+  .col-sm-6 {
+    margin-right: 0 !important;
+    margin-left:2px;
+  }
+}
+
+
+
+
 
 /*** Gallery Events ***/
 
@@ -324,7 +358,6 @@
         margin: 0 auto;
         display: block;
     }
-    
 }
 @media (max-width: 595px) and (min-width: 388px) {
     .img-fluid {
@@ -332,8 +365,8 @@
         margin: 0 auto;
         display: block;
     }
+   
 }
-
 #portfolio-flters li {
     display: inline-block;
     font-weight: 500;
