@@ -5,6 +5,7 @@
     --dark: #1A2A36;
 }
 
+
 .fw-medium {
     font-weight: 500 !important;
 }
@@ -87,6 +88,7 @@
 .navbar a.btn {
     height: 75px;
 }
+
 
 .navbar .navbar-nav .nav-link {
     margin-right: 30px;
