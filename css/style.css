@@ -218,8 +218,24 @@
 }
 
 .page-header {
-    background: linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .1)), url(../img/carousel-1.jpg) center center no-repeat;
+    position: relative;
+    background: url(/asset-enc/bg.jpg) center center no-repeat;
     background-size: cover;
+    opacity:7;
+}
+.page-header p {
+    position: relative;
+}
+ 
+
+.page-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(100, 100, 100, 0.5); /* Ubah nilai 0.5 sesuai keinginan Anda */
 }
 
 .breadcrumb-item + .breadcrumb-item::before {
