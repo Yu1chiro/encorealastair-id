@@ -12,12 +12,7 @@
     spinner();
     
     // hidden to id navbar menu 
-    document.getElementById('about').style.display = 'none';
-    document.getElementById('events').style.display = 'none';
-    document.getElementById('gallery').style.display = 'none';
-    document.getElementById('contact').style.display = 'none';
-    document.getElementById('pages').style.display = 'none';
-    document.getElementById('blog').style.display = 'none';
+
 
 
 
