@@ -66,7 +66,7 @@
             <div class="navbar-nav ms-auto p-4 p-lg-0 bg-dark">
                 <a href="index.html" class="nav-item nav-link active">Home</a>
                 <a href="#about" class="nav-item nav-link">About</a>
-                <a href="#events" class="nav-item nav-link" onclick="hideEvents()">Events</a>
+                <a href="#events" class="nav-item nav-link">Events</a>
                 <a href="#gallery" class="nav-item nav-link">Gallery</a>
                 <div class="nav-item dropdown">
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Only</a>
@@ -75,19 +75,11 @@
                         <a href="404.html" class="dropdown-item fw-bold">Blog</a>            
                     </div>
                 </div>
-                <a href="contact.html" class="nav-item nav-link">Contact</a>
+                <a href="#contact" class="nav-item nav-link">Contact</a>
             </div>
         </div>
     </nav>
-    <script>
-        // Fungsi untuk menyembunyikan elemen #events
-        document.addEventListener('DOMContentLoaded', function hideEvents() {
-          var eventsElement = document.getElementById('#events');
-          eventsElement.style.display = eventsElement.style.display ='none';
-          // atau
-          // eventsElement.style.display = 'block'; // Untuk menampilkan
-        });
-      </script>
+    
     <!-- Navbar End -->
 
 
@@ -525,14 +517,14 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h5 class="text-white mb-4">Quick Links</h5>
-                    <a class="btn btn-link" href="">About Us</a>
-                    <a class="btn btn-link" href="">Events</a>
-                    <a class="btn btn-link" href="">Gallery</a>
-                    <a class="btn btn-link" href="">Rental Costume</a>
-                    <a class="btn btn-link" href="">Contact</a>
+                    <a class="btn btn-link" href="#about">About</a>
+                    <a class="btn btn-link" href="#events">Events</a>
+                    <a class="btn btn-link" href="#gallery">Gallery</a>
+                    <a class="btn btn-link" href="#rentcost">Rental Costume</a>
+                    <a class="btn btn-link" href="#contact">Contact</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h5 class="text-white mb-4">Project Gallery</h5>
+                    <h5 class="text-white mb-4">Gallery</h5>
                     <div class="row g-2">
                         <div class="col-4">
                             <img class="img-fluid rounded" src="asset-enc/bg.jpg" alt="">
@@ -561,7 +553,7 @@
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
                         &copy; <a href="#">EncoreAlastair 2023 </a>, All Right Reserved.
-                        <a href="https://instagram.com/yuichiro_taku/">Design by Yuichiro</a>
+                        <a href="https://instagram.com/yuichiro_taku/">Developer by Yuichiro</a>
                     </div>
                 </div>
             </div>
@@ -571,7 +563,6 @@
 
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
 
 
     <!-- JavaScript Libraries -->
