@@ -89,6 +89,13 @@
     height: 75px;
 }
 
+.navbar-toggler-icon {
+    transition: transform 0.5s ease; /* Menentukan durasi dan jenis transisi */
+}
+
+.navbar-toggler-icon:hover {
+    transform: rotate(360deg); /* Menentukan rotasi saat dihover */
+}
 
 .navbar .navbar-nav .nav-link {
     margin-right: 30px;
