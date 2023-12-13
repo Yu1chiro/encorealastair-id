@@ -237,6 +237,11 @@
     left: 0;
     background-color: rgba(100, 100, 100, 0.5); /* Ubah nilai 0.5 sesuai keinginan Anda */
 }
+.page-image {
+    position: relative;
+    background-size: cover;
+    opacity:7;
+}
 
 .breadcrumb-item + .breadcrumb-item::before {
     color: var(--light);
