@@ -61,7 +61,7 @@
             <img src="asset-enc/enc.jpg" style="height: 50px; width:50px;">
             <h2 class="m-0 text-white ms-2">Encore Alastair</h2>
         </a>
-        <button type="button" class="navbar-toggler me-2" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <button type="button" class="navbar-toggler me-2" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" onclick="rotateIcon()">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -74,6 +74,7 @@
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Only</a>
                     <div class="dropdown-menu bg-light m-0">
                         <a href="rencost.html" class="dropdown-item fw-bold">Rental Costume</a>
+                        <a href="https://drive.google.com/file/d/1u-ObR6gn1O9_ZsQyOX0h3xFaCRv2bbE8/view?usp=sharing" class="dropdown-item fw-bold">Struktur Komunitas</a>
                         <a href="blog.html" class="dropdown-item fw-bold">Blog</a>            
                     </div>
                 </div>
@@ -81,6 +82,17 @@
             </div>
         </div>
     </nav>
+    <script>
+         function rotateIcon() {
+            var icon = document.querySelector('.navbar-toggler-icon');
+            icon.classList.add('rotate');
+
+            // Optional: Untuk mengembalikan ikon ke posisi awal setelah beberapa detik
+            setTimeout(function() {
+                icon.classList.remove('rotate');
+            }, 500); // Sesuaikan dengan durasi transisi di CSS
+        }
+    </script>
     
     <!-- Navbar End -->
 
