@@ -87,16 +87,17 @@
     </nav>
     <!-- Inisialisasi FancyBox -->
     <!-- Inisialisasi FancyBox -->
-<script>
-    $(document).ready(function () {
-        $('[data-fancybox="lightbox"]').fancybox({
-            // Konfigurasi FancyBox
-            clickOutside: true,  // Menutup pop-up saat mengklik di luar area pop-up
-            touch: false,        // Menonaktifkan fitur sentuh pada perangkat mobile (opsional)
-            // Tambahan konfigurasi FancyBox lainnya jika diperlukan
+    <script>
+        $(document).ready(function () {
+            $('[data-fancybox="lightbox"]').fancybox({
+                clickOutside: true,
+                touch: {
+                    vertical: false, // Mengaktifkan atau menonaktifkan scrolling vertikal pada perangkat sentuh
+                },
+            });
         });
-    });
-</script>
+    </script>
+    
 
 
     <script>
