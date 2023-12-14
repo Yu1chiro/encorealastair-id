@@ -29,6 +29,9 @@
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+    <!-- Tambahkan stylesheet FancyBox -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+
 
 
     <!-- Customized Bootstrap Stylesheet -->
@@ -74,7 +77,7 @@
                     <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Only</a>
                     <div class="dropdown-menu bg-light m-0">
                         <a href="rencost.html" class="dropdown-item fw-bold">Rental Costume</a>
-                        <a href="https://drive.google.com/file/d/1u-ObR6gn1O9_ZsQyOX0h3xFaCRv2bbE8/view?usp=sharing" class="dropdown-item fw-bold">Struktur Komunitas</a>
+                        <a href="asset-enc/bagan.png" class="dropdown-item fw-bold" data-fancybox="lightbox">Struktur Komunitas</a>
                         <a href="blog.html" class="dropdown-item fw-bold">Blog</a>            
                     </div>
                 </div>
@@ -82,6 +85,20 @@
             </div>
         </div>
     </nav>
+    <!-- Inisialisasi FancyBox -->
+    <!-- Inisialisasi FancyBox -->
+<script>
+    $(document).ready(function () {
+        $('[data-fancybox="lightbox"]').fancybox({
+            // Konfigurasi FancyBox
+            clickOutside: true,  // Menutup pop-up saat mengklik di luar area pop-up
+            touch: false,        // Menonaktifkan fitur sentuh pada perangkat mobile (opsional)
+            // Tambahan konfigurasi FancyBox lainnya jika diperlukan
+        });
+    });
+</script>
+
+
     <script>
          function rotateIcon() {
             var icon = document.querySelector('.navbar-toggler-icon');
@@ -573,9 +590,14 @@
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
     <script src="lib/isotope/isotope.pkgd.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <!-- fancy script -->
+    <!-- Tambahkan script FancyBox -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </body>
 
 </html>
