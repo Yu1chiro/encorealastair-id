@@ -256,6 +256,11 @@
 
 
 /*** About ***/
+.about-text .text-dark {
+    align-items:center!important;
+    justify-content:center!important;
+    display:center!important;
+}
 @media (min-width: 992px) {
     .container.about {
         max-width: 100% !important;
@@ -269,6 +274,7 @@
 @media (min-width: 1200px) {
     .about-text  {
         padding-right: calc(((100% - 1140px) / 2) + .75rem);
+        
     }
 }
 
